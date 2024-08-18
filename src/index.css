@@ -1,0 +1,21 @@
+/* @font-face {
+	font-family: "freight-main";
+	src: url(./assets/fonts/FreightSansProBold-Regular.woff2);
+}
+
+@font-face {
+  font-family: "freight-light" ;
+  src: url(./assets/fonts/FreightSansProSemibold-Regular.ttf);
+} */
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #050203;
+	overflow: hidden;
+}
+
+.html {
+	font-size: 62.5%;
+}

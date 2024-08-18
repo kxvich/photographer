@@ -1,0 +1,158 @@
+.home {
+	position: relative;
+}
+
+.header {
+	height: 100vh;
+	position: relative;
+	animation: scale 1.5s;
+	animation-fill-mode: backwards;
+	overflow: hidden;
+
+	&Image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+
+	// &Transparent {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	height: 100vh;
+	// 	width: 100%;
+	// 	background-color: rgba(4, 11, 16, 0.3);
+	// }
+
+	&TextBox {
+		text-align: right;
+		width: 40%;
+		position: absolute;
+		top: 3%;
+		right: 5%;
+		color: #fff;
+		z-index: 1;
+		font-family: "New Amsterdam", sans-serif;
+	}
+
+	&Location {
+		font-weight: lighter;
+		letter-spacing: 4px;
+		margin-bottom: 8rem;
+		animation: movedown 1s 0.75s;
+		backface-visibility: hidden;
+		animation-fill-mode: backwards;
+	}
+	&Name {
+		letter-spacing: 8px;
+		animation: moveup 1s 0.75s;
+		backface-visibility: hidden;
+		animation-fill-mode: backwards;
+	}
+	&Paragraph {
+		font-family: "Anek Devanagari", sans-serif;
+		margin-bottom: 2rem;
+
+		&1 {
+			display: inline-block;
+			animation: moveup 1s 0.85s;
+			backface-visibility: hidden;
+			animation-fill-mode: backwards;
+		}
+		&2 {
+			display: inline-block;
+			animation: moveup 1s 0.9s;
+			backface-visibility: hidden;
+			animation-fill-mode: backwards;
+		}
+		&3 {
+			display: inline-block;
+			animation: moveup 1s 0.95s;
+			backface-visibility: hidden;
+			animation-fill-mode: backwards;
+		}
+		&4 {
+			display: inline-block;
+			animation: moveup 1s 1s;
+			backface-visibility: hidden;
+			animation-fill-mode: backwards;
+		}
+		&5 {
+			display: inline-block;
+			animation: moveup 1s 1.1s;
+			backface-visibility: hidden;
+			animation-fill-mode: backwards;
+		}
+	}
+	&Button {
+		background-color: transparent;
+		border-radius: 10rem;
+		border: 1px solid #212529;
+		color: #fff;
+		padding: 0.5rem 1.5rem;
+		font-family: "New Amsterdam", sans-serif;
+		font-size: 1.2rem;
+		letter-spacing: 1.5px;
+		transition: all 0.4s;
+		background-size: 220%;
+		animation: movedown 1s 1.2s;
+		animation-fill-mode: backwards;
+
+		&Text {
+			margin-right: 1rem;
+		}
+
+		&:hover {
+			background-color: #212529;
+			background-image: linear-gradient(
+				90deg,
+				transparent 0%,
+				transparent 50%,
+				#212529 50%
+			);
+			background-position: 100%;
+		}
+	}
+}
+
+.fadeIn {
+	opacity: 0;
+}
+
+@keyframes movedown {
+	0% {
+		opacity: 0;
+
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes moveup {
+	0% {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
