@@ -5,11 +5,11 @@
 .header {
 	height: 100vh;
 	position: relative;
-	animation: scale 1.5s;
-	animation-fill-mode: backwards;
 	overflow: hidden;
 
 	&Image {
+		animation: scale 1.5s;
+		animation-fill-mode: backwards;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -33,7 +33,7 @@
 		text-align: right;
 		width: 40%;
 		position: absolute;
-		top: 3%;
+		top: 8%;
 		right: 5%;
 		color: #fff;
 		z-index: 1;
@@ -53,6 +53,7 @@
 		animation: moveup 1s 0.75s;
 		backface-visibility: hidden;
 		animation-fill-mode: backwards;
+		margin-bottom: 1rem;
 	}
 	&Paragraph {
 		font-family: "Anek Devanagari", sans-serif;
@@ -102,13 +103,14 @@
 		background-size: 220%;
 		animation: movedown 1s 1.2s;
 		animation-fill-mode: backwards;
+		text-decoration: none;
+		display: inline-block;
 
 		&Text {
 			margin-right: 1rem;
 		}
 
 		&:hover {
-			background-color: #212529;
 			background-image: linear-gradient(
 				90deg,
 				transparent 0%,
@@ -116,6 +118,9 @@
 				#212529 50%
 			);
 			background-position: 100%;
+		}
+		&:active {
+			transform: translateY(0.5rem) ;
 		}
 	}
 }

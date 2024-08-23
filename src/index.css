@@ -7,15 +7,35 @@
   font-family: "freight-light" ;
   src: url(./assets/fonts/FreightSansProSemibold-Regular.ttf);
 } */
-
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	background-color: #050203;
-	overflow: hidden;
 }
 
 .html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+.contactIcon {
+	transition: all 0.3s;
+}
+
+.contactIcon:hover {
+	transform: translateY(-3px) scale(1.1);
+	color: #212529;
+}
+
+.contactIconWhite {
+	transition: all 0.3s;
+}
+.contactIconWhite:hover {
+	transform: translateY(-3px) scale(1.1);
+	color: #fff;
 }

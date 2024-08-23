@@ -1,0 +1,55 @@
+.work {
+	display: flex;
+	align-items: center;
+	font-family: "Anek Devanagari", sans-serif;
+	border-bottom: 1px solid #212529;
+	padding: 2rem 1rem 2rem 1rem;
+	transition: all 0.5s;
+	background-size: 220%;
+	animation: moveup 1s;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+
+	&Year {
+		font-size: 1.3rem;
+	}
+
+	&TextPrimary {
+		display: block;
+		letter-spacing: 1.5px;
+		font-size: 1.3rem;
+	}
+	&TextSecondary {
+		display: block;
+		letter-spacing: 1.5px;
+		font-size: 0.9rem;
+		opacity: 0.5;
+	}
+
+	&:hover {
+		background-image: linear-gradient(
+			120deg,
+			transparent 0%,
+			transparent 50%,
+			#fff 50%
+		);
+		background-position: 100%;
+		color: #050203;
+		transform: translateX(-1rem);
+		cursor: pointer;
+	}
+	&:active{
+		transform: translateY(.5rem) translateX(-1rem);
+	}
+}
+
+@keyframes moveup {
+	0% {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

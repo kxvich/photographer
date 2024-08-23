@@ -1,0 +1,31 @@
+.workPreview {
+	// display: flex;
+	// justify-content: flex-end;
+    position: fixed;
+	top: 20%;
+	right: 7%;
+	width: 30%;
+	
+	&Image {
+		animation: moveup 1s;
+		width: 100%;
+		// height: 25rem;
+        // filter: blur(1.5px);
+	}
+}
+
+.work {
+	width: 20rem;
+	height: 20rem;
+}
+
+@keyframes moveup {
+	0% {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
