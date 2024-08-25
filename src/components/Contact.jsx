@@ -8,7 +8,7 @@ function Contact({ decor }) {
 			<i className={` ${decor} fa-brands fa-facebook`}></i>
 			<i className={` ${decor} fa-brands fa-instagram`}></i>
 			<i className={` ${decor} fa-brands fa-x-twitter`}></i>
-			<Link to="about">
+			<Link to="/about">
 				<button className={styles.ContactAbout}>About</button>
 			</Link>
 		</div>

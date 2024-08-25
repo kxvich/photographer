@@ -47,6 +47,7 @@
 		animation: movedown 1s 0.75s;
 		backface-visibility: hidden;
 		animation-fill-mode: backwards;
+		font-size: 1rem;
 	}
 	&Name {
 		letter-spacing: 8px;
@@ -58,12 +59,13 @@
 	&Paragraph {
 		font-family: "Anek Devanagari", sans-serif;
 		margin-bottom: 2rem;
+		display: inline-block;
+		animation: moveup 1s 0.85s;
+		backface-visibility: hidden;
+		animation-fill-mode: backwards;
 
 		&1 {
 			display: inline-block;
-			animation: moveup 1s 0.85s;
-			backface-visibility: hidden;
-			animation-fill-mode: backwards;
 		}
 		&2 {
 			display: inline-block;
@@ -105,6 +107,7 @@
 		animation-fill-mode: backwards;
 		text-decoration: none;
 		display: inline-block;
+		margin-bottom: 7.5rem;
 
 		&Text {
 			margin-right: 1rem;
@@ -120,13 +123,224 @@
 			background-position: 100%;
 		}
 		&:active {
-			transform: translateY(0.5rem) ;
+			transform: translateY(0.5rem);
 		}
 	}
-}
 
-.fadeIn {
-	opacity: 0;
+	&IconContainer {
+		display: flex;
+		justify-content: flex-end;
+		align-items: end;
+		animation: moveup 1s 0.9s;
+		animation-fill-mode: backwards;
+	}
+
+	&Icon {
+		font-size: 1.5rem;
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+
+	// 1280
+	@media only screen and (max-width: 80em) {
+		&TextBox {
+			width: 45%;
+			top: 5%;
+		}
+
+		&Location {
+			margin-bottom: 15rem;
+		}
+
+		&Paragraph {
+			font-size: 1.1rem;
+			margin-bottom: 3rem;
+			
+		}
+
+		&Button {
+			margin-bottom: 9rem;
+		}
+	}
+
+	// 820
+	@media only screen and (max-width: 51.25em) {
+		&TextBox {
+			width: 80%;
+			top: 5%;
+		}
+
+		&Location {
+			margin-bottom: 22rem;
+		}
+
+		&Paragraph {
+			font-size: 1.1rem;
+			margin-bottom: 3rem;
+		}
+
+		&Button {
+			margin-bottom: 23rem;
+		}
+	}
+	// 768
+	@media only screen and (max-width: 48em) {
+		&TextBox {
+			width: 80%;
+			top: 3%;
+		}
+		&Location {
+			margin-bottom: 18rem;
+		}
+
+		&Paragraph {
+			width: 80%;
+			font-size: 1.1rem;
+		}
+
+		&Button {
+			margin-bottom: 15rem;
+		}
+	}
+
+	// 428px
+
+	@media only screen and (max-width: 26.75em) {
+		&TextBox {
+			width: 100%;
+			top: 4%;
+		}
+
+		&Location {
+			margin-bottom: 9rem;
+		}
+
+		&Paragraph {
+			font-size: 1.1rem;
+			width: 80%;
+		}
+
+		&Button {
+			margin-bottom: 11rem;
+			padding: 0.5rem 0.8rem;
+		}
+	}
+
+	@media only screen and (max-width: 25.875em) {
+		&TextBox {
+			width: 100%;
+			top: 4%;
+		}
+
+		&Location {
+			font-size: 1.2rem;
+		}
+
+		&Name {
+			font-size: 1.4rem;
+		}
+
+		&Paragraph {
+			font-size: 1.1rem;
+			width: 80%;
+		}
+
+		&Button {
+			margin-bottom: 11rem;
+			padding: 0.5rem 0.8rem;
+		}
+	}
+	// 390px
+
+	@media only screen and (max-width: 24.375em) {
+		&TextBox {
+			width: 100%;
+		}
+
+		&Name {
+			font-size: 1.3rem;
+		}
+
+		&Paragraph {
+			font-size: 1.1rem;
+			// width: 80%;
+		}
+
+		&Button {
+			margin-bottom: 7.5rem;
+			padding: 0.5rem 0.8rem;
+		}
+	}
+	// xr
+	@media only screen and (max-width: 23.438em) {
+		&TextBox {
+			top: 5%;
+			width: 100%;
+		}
+		&Name {
+			font-size: 1.2rem;
+		}
+		&Paragraph {
+			font-size: 1.1rem;
+		}
+
+		&Button {
+			font-size: 1rem;
+			margin-bottom: 6rem;
+		}
+	}
+
+	@media only screen and (max-width: 22.5em) {
+		&TextBox {
+			width: 100%;
+			top: 4%;
+		}
+
+		&Location {
+			font-size: 1.2rem;
+		}
+
+		&Name {
+			font-size: 1.2rem;
+		}
+
+		&Paragraph {
+			font-size: 1rem;
+			margin-bottom: 1.4rem;
+		}
+
+		&Button {
+			margin-bottom: 7rem;
+			padding: 0.5rem 0.8rem;
+		}
+	}
+
+	@media only screen and (max-width: 20em) {
+		&TextBox {
+			width: 100%;
+		}
+
+		&Location {
+			margin-bottom: 4rem;
+		}
+		&Name {
+			font-size: 0.9rem;
+		}
+		&Paragraph {
+			font-size: 0.85rem;
+			width: 80%;
+		}
+		&Button {
+			font-size: 0.9rem;
+			padding: 0.5rem 0.8rem;
+			margin-bottom: 4.5rem;
+		}
+
+		&Icon {
+			font-size: 1.1rem;
+		}
+	}
 }
 
 @keyframes movedown {

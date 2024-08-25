@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./cssModules/WorkPage.module.scss";
 import Contact from "./Contact";
+import BackButton from "./BackButton";
 
 function WorkPage() {
 	const images = ["/images/work1/image1", "/images/work1/image2"];
@@ -8,6 +9,7 @@ function WorkPage() {
 	return (
 		<div className={styles.workPage}>
 			<Contact decor={"contactIconWhite"} />
+			<BackButton/>
 			<Link to={"/"} className={styles.workPageName}>
 				IBRAHIM OLUWADAMILARE
 			</Link>

@@ -1,3 +1,130 @@
-.aboutContainer{
-    
+.aboutContainer {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(/images/aboutImages/image1.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 0 5rem;
+	position: relative;
+}
+
+.transparentBackground {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+	height: 100vh;
+	width: 100%;
+	z-index: 5;
+}
+
+
+.contentContainer {
+	display: flex;
+	height: 80vh;
+	z-index: 10;
+	animation: scale 1s;
+	animation-fill-mode: backwards;
+}
+
+.imageContainer {
+	width: 50%;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+
+.textContainer {
+	// height: 20rem;
+	width: 50%;
+	background-color: #1d1e20;
+	padding: 2rem 4rem 0 4rem;
+	color: #fff;
+	font-family: "New Amsterdam", sans-serif;
+
+	position: relative;
+}
+.greeting {
+	letter-spacing: 3px;
+	font-weight: lighter;
+	margin-bottom: 0.5rem;
+	animation: movedown 1s 0.25s;
+	animation-fill-mode: backwards;
+}
+
+.paragraph {
+	font-family: "Lato", sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.7rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	animation: movedown 1s 0.5s;
+	animation-fill-mode: backwards;
+}
+
+.email {
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	animation: movedown 1s 0.75s;
+	animation-fill-mode: backwards;
+    cursor: pointer;
+}
+
+.contact {
+	position: absolute;
+	bottom: 15%;
+	right: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 20%;
+	animation: movedown 1s 0.95s;
+	animation-fill-mode: backwards;
+}
+
+.contact i {
+	transition: all 0.2s;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.contact i:hover {
+	transform: scale(1.05);
+}
+
+@keyframes movedown {
+	0% {
+		opacity: 0;
+
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes moveup {
+	0% {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }

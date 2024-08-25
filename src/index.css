@@ -1,12 +1,3 @@
-/* @font-face {
-	font-family: "freight-main";
-	src: url(./assets/fonts/FreightSansProBold-Regular.woff2);
-}
-
-@font-face {
-  font-family: "freight-light" ;
-  src: url(./assets/fonts/FreightSansProSemibold-Regular.ttf);
-} */
 * {
 	margin: 0;
 	padding: 0;
@@ -15,13 +6,45 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #050203;
+	background-image: url(/images/gallerybackground/image1.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
+/* @media only screen and (max-width: 75em) {
+	html {
+		font-size: 56.25%;
+	}
+}
+@media only screen and (max-width: 56.25em) {
+	html {
+		font-size: 50%;
+	}
+}
+@media only screen and (max-width: 26.8em) {
+	html {
+		font-size: 62.5%;
+	}
+}
+@media only screen and (max-width: 23.4em) {
+	html {
+		font-size: 37.5%;
+	}
+}
+@media only screen and (max-width: 20em) {
+	html {
+		font-size: 31.25%;
+	}
+}
+@media only screen and (min-width: 112.5em) {
+	html {
+		font-size: 75%;
+	}
+} */
 
 .contactIcon {
 	transition: all 0.3s;

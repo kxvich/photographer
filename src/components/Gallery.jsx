@@ -21,9 +21,10 @@ function Gallery() {
 			value={{ selectedId, handleSelect, handleUnselect }}
 		>
 			<div className={styles.gallery}>
+				
 				<h2 className={styles.galleryHeading}>PAST WORK</h2>
 				<Contact decor={"contactIcon"} />
-				<div className={styles.galleryBackground}></div>
+				{/* <div className={styles.galleryBackground}></div> */}
 				<div
 					style={{
 						backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/workbackground/image${selectedId}.jpg)`,
