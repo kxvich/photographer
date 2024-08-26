@@ -32,6 +32,25 @@
 		}
 	}
 }
+@media only screen and (max-width:26.75em){
+	.Contact{display: none;}
+}
+
+@media only screen and (max-width:25.875em){
+	.Contact{display: none;}
+}
+
+@media only screen and (max-width: 23.438em) {
+	.Contact{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 20em){
+	.Contact{
+		display: none;
+	}
+}
 
 @keyframes movedown {
 	0% {

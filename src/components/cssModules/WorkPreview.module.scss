@@ -14,10 +14,17 @@
 	}
 }
 
+
 .work {
 	width: 20rem;
 	height: 20rem;
 }
+
+// @media only screen and (max-width: 20em){
+// 	.workPreview{
+// 		display: none;
+// 	}	
+// }
 
 @keyframes moveup {
 	0% {

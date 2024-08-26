@@ -5,23 +5,36 @@ import { useState } from "react";
 // import { useEffect } from "react";
 
 function Header() {
+	// const images = [
+	// 	// "/photographer/images/homescreen.jpg",
+	// 	"/photographer/images/workbackground/image1.jpg",
+	// 	"/photographer/images/workbackground/image2.jpg",
+	// 	"/photographer/images/workbackground/image3.jpg",
+	// 	"/photographer/images/workbackground/image4.jpg",
+	// 	"/photographer/images/workbackground/image5.jpg",
+	// 	"/photographer/images/workbackground/image6.jpg",
+	// 	"/photographer/images/workbackground/image7.jpg",
+	// 	"/photographer/images/workbackground/image8.jpg",
+	// ];
+
+
 	const images = [
-		"/images/homescreen.jpg",
-		"/images/workbackground/image1.jpg",
-		"/images/workbackground/image2.jpg",
-		"/images/workbackground/image3.jpg",
-		"/images/workbackground/image4.jpg",
-		"/images/workbackground/image5.jpg",
-		"/images/workbackground/image6.jpg",
-		"/images/workbackground/image7.jpg",
-		"/images/workbackground/image8.jpg",
+		// "/photographer/images/homescreen.jpg",
+		"images/workbackground/image1.jpg",
+		"images/workbackground/image2.jpg",
+		"images/workbackground/image3.jpg",
+		"images/workbackground/image4.jpg",
+		"images/workbackground/image5.jpg",
+		"images/workbackground/image6.jpg",
+		"images/workbackground/image7.jpg",
+		"images/workbackground/image8.jpg",
 	];
 	// eslint-disable-next-line no-unused-vars
-	const [bgImage1, setBgImage1] = useState(images[0]);
+	const [bgImage1, setBgImage1] = useState(images[5]);
 	// const [bgImage2, setBgImage2] = useState(images[1]);
 	// const [fadeIn, setFadeIn] = useState(false);
 
-	// let imageIndex = 3;
+	// let imageIndex = 0;
 	// useEffect(function () {
 	// 	function changeBackground() {
 	// 		// setFadeIn(!fadeIn);
@@ -40,7 +53,10 @@ function Header() {
 		<div className={styles.home}>
 			<div className={styles.header}>
 				<div
-					style={{ backgroundImage: `url(${bgImage1})` }}
+					style={{
+						backgroundImage: `url(${bgImage1})`,
+						transition: "opacity 1s",
+					}}
 					className={styles.headerImage}
 				></div>
 				{/* <div
@@ -54,8 +70,8 @@ function Header() {
 					<p className={styles.headerParagraph}>
 						Ibrahim is a multitalented photographer that captures the essence of
 						life’s most beautiful moments, Ibrahim blends creativity and
-						technical skill to create timeless images. Explore the
-						gallery and see the world through his lens.
+						technical skill to create timeless images. Explore the gallery and
+						see the world through his lens.
 						<span className={styles.headerParagraph1}></span>
 						<span className={styles.headerParagraph2}></span>
 						<span className={styles.headerParagraph3}></span>

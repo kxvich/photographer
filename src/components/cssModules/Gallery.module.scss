@@ -15,7 +15,6 @@
 		background-size: cover;
 		background-position: center;
 		color: #fff;
-		
 	}
 
 	&Heading {
@@ -43,6 +42,82 @@
 	&ImagePreview {
 		width: 50%;
 		z-index: 20;
+	}
+
+	@media only screen and (max-width: 26.75em) {
+		padding: 3rem 1rem;
+
+		&Heading {
+			top: 3%;
+			left: 50%;
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		&Text {
+			width: 100%;
+		}
+
+		&ImagePreview {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 25.875em) {
+		padding: 3rem 1rem;
+
+		&Heading {
+			top: 3%;
+			left: 50%;
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		&Text {
+			width: 100%;
+		}
+
+		&ImagePreview {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 23.438em) {
+		padding: 3rem 1rem;
+
+		&Heading {
+			top: 3%;
+			left: 50%;
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		&Text {
+			width: 100%;
+		}
+
+		&ImagePreview {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 20em) {
+		padding: 3rem 1rem;
+
+		&Heading {
+			top: 3%;
+			left: 50%;
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		&Text {
+			width: 100%;
+		}
+
+		&ImagePreview {
+			display: none;
+		}
 	}
 }
 

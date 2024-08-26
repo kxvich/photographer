@@ -38,8 +38,92 @@
 		transform: translateX(-1rem);
 		cursor: pointer;
 	}
-	&:active{
-		transform: translateY(.5rem) translateX(-1rem);
+	&:active {
+		transform: translateY(0.5rem) translateX(-1rem);
+	}
+
+	@media only screen and (max-width: 26.75em) {
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+		&:hover {
+			background-image: linear-gradient(transparent, transparent);
+			color: #fff;
+			transform: translateX(0);
+		}
+
+		&Year {
+			font-size: 1.1rem;
+		}
+
+		&TextPrimary {
+			font-size: 1.1rem;
+		}
+		&TextSecondary {
+			font-size: 0.8rem;
+		}
+	}
+
+	@media only screen and (max-width: 25.875em) {
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+		&:hover {
+			background-image: linear-gradient(transparent, transparent);
+			color: #fff;
+			transform: translateX(0);
+		}
+
+		&Year {
+			font-size: 1rem;
+		}
+
+		&TextPrimary {
+			font-size: 1rem;
+		}
+		&TextSecondary {
+			font-size: 0.7rem;
+		}
+	}
+
+	@media only screen and (max-width: 23.438em) {
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+		&:hover {
+			background-image: linear-gradient(transparent, transparent);
+			color: #fff;
+			transform: translateX(0);
+		}
+
+		&Year {
+			font-size: 1rem;
+		}
+
+		&TextPrimary {
+			font-size: 1rem;
+		}
+		&TextSecondary {
+			font-size: 0.7rem;
+		}
+	}
+
+	@media only screen and (max-width: 20em) {
+		padding-bottom: 0.3rem;
+		padding-top: 0.3rem;
+		&:hover {
+			background-image: linear-gradient(transparent, transparent);
+			color: #fff;
+			transform: translateX(0);
+		}
+
+		&Year {
+			font-size: 1rem;
+		}
+
+		&TextPrimary {
+			font-size: 1rem;
+		}
+		&TextSecondary {
+			font-size: 0.7rem;
+		}
 	}
 }
 
