@@ -1,0 +1,23 @@
+.workTitle {
+	font-weight: lighter;
+	margin-bottom: 7rem;
+	text-align: center;
+	animation: moveup 1s;
+	animation-fill-mode: backwards;
+
+    &Icon {
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+}
+
+@keyframes moveup {
+	0% {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

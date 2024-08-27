@@ -5,19 +5,6 @@ import { useState } from "react";
 // import { useEffect } from "react";
 
 function Header() {
-	// const images = [
-	// 	// "/photographer/images/homescreen.jpg",
-	// 	"/photographer/images/workbackground/image1.jpg",
-	// 	"/photographer/images/workbackground/image2.jpg",
-	// 	"/photographer/images/workbackground/image3.jpg",
-	// 	"/photographer/images/workbackground/image4.jpg",
-	// 	"/photographer/images/workbackground/image5.jpg",
-	// 	"/photographer/images/workbackground/image6.jpg",
-	// 	"/photographer/images/workbackground/image7.jpg",
-	// 	"/photographer/images/workbackground/image8.jpg",
-	// ];
-
-
 	const images = [
 		// "/photographer/images/homescreen.jpg",
 		"images/workbackground/image1.jpg",
@@ -29,7 +16,7 @@ function Header() {
 		"images/workbackground/image7.jpg",
 		"images/workbackground/image8.jpg",
 	];
-	// eslint-disable-next-line no-unused-vars
+	// // eslint-disable-next-line no-unused-vars
 	const [bgImage1, setBgImage1] = useState(images[5]);
 	// const [bgImage2, setBgImage2] = useState(images[1]);
 	// const [fadeIn, setFadeIn] = useState(false);

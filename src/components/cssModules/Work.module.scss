@@ -9,6 +9,7 @@
 	animation: moveup 1s;
 	justify-content: space-between;
 	margin-bottom: 1rem;
+	-webkit-tap-highlight-color: transparent;
 
 	&Year {
 		font-size: 1.3rem;
@@ -50,6 +51,9 @@
 			color: #fff;
 			transform: translateX(0);
 		}
+		&:active {
+			transform: translateY(0) translateX(0);
+		}
 
 		&Year {
 			font-size: 1.1rem;
@@ -70,6 +74,33 @@
 			background-image: linear-gradient(transparent, transparent);
 			color: #fff;
 			transform: translateX(0);
+		}
+		&:active {
+			transform: translateY(0) translateX(0);
+		}
+
+		&Year {
+			font-size: 1rem;
+		}
+
+		&TextPrimary {
+			font-size: 1rem;
+		}
+		&TextSecondary {
+			font-size: 0.7rem;
+		}
+	}
+
+	@media only screen and (max-width: 24.375em) {
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+		&:hover {
+			background-image: linear-gradient(transparent, transparent);
+			color: #fff;
+			transform: translateX(0);
+		}
+		&:active {
+			transform: translateY(0) translateX(0);
 		}
 
 		&Year {
@@ -92,7 +123,9 @@
 			color: #fff;
 			transform: translateX(0);
 		}
-
+		&:active {
+			transform: translateY(0) translateX(0);
+		}
 		&Year {
 			font-size: 1rem;
 		}
@@ -112,6 +145,9 @@
 			background-image: linear-gradient(transparent, transparent);
 			color: #fff;
 			transform: translateX(0);
+		}
+		&:active {
+			transform: translateY(0) translateX(0);
 		}
 
 		&Year {

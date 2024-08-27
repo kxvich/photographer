@@ -1,0 +1,45 @@
+.desktopNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1e20;
+    padding: 2rem 5rem;
+    margin-bottom: 7rem;
+
+    &NameContainer{
+        text-align: center;
+        width: 60%;
+    }
+
+    &Name {
+		font-weight: lighter;
+		letter-spacing: 1.5px;
+		font-size: 1.1rem;
+		margin-bottom: 0.5rem;
+		animation: movedown 1s;
+		animation-fill-mode: backwards;
+		text-decoration: none;
+		color: #fff;
+        display: inline-block;
+	}
+
+    &Job {
+		font-family: "Courier New", Courier, monospace;
+		font-weight: lighter;
+		font-size: 0.7rem;
+		animation: movedown 1s 0.2s;
+		animation-fill-mode: backwards;
+	}
+}
+
+@keyframes movedown {
+	0% {
+		opacity: 0;
+
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

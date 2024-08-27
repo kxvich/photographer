@@ -1,0 +1,45 @@
+.MobileNav{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #212529;
+    animation: movedown 1s;
+    animation-fill-mode: backwards;
+    // position: fixed;
+    // width: 97%;
+    // top: 0;
+    // left: 0;
+
+    &Name{
+        font-family: "New Amsterdam", sans-serif;
+        letter-spacing: 4px;
+        font-size: 2rem;
+        font-weight: lighter;
+        color: #212529;
+    }
+
+    &Icon{
+        font-size: 1.5rem;
+        color: #212529;
+        // position: sticky;
+    }
+
+    @media only screen and (min-width: 80em){
+        display: none;
+	}
+
+}
+
+@keyframes movedown {
+	0% {
+		opacity: 0;
+
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

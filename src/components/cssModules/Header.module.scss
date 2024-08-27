@@ -108,6 +108,7 @@
 		text-decoration: none;
 		display: inline-block;
 		margin-bottom: 7.5rem;
+		-webkit-tap-highlight-color: transparent;
 
 		&Text {
 			margin-right: 1rem;
@@ -156,11 +157,13 @@
 		&Paragraph {
 			font-size: 1.1rem;
 			margin-bottom: 3rem;
-			
 		}
 
 		&Button {
 			margin-bottom: 9rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 	}
 
@@ -182,6 +185,9 @@
 
 		&Button {
 			margin-bottom: 23rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 	}
 	// 768
@@ -201,6 +207,9 @@
 
 		&Button {
 			margin-bottom: 15rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 	}
 
@@ -224,6 +233,9 @@
 		&Button {
 			margin-bottom: 11rem;
 			padding: 0.5rem 0.8rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 	}
 
@@ -249,6 +261,9 @@
 		&Button {
 			margin-bottom: 11rem;
 			padding: 0.5rem 0.8rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 	}
 	// 390px
@@ -268,8 +283,11 @@
 		}
 
 		&Button {
-			margin-bottom: 7.5rem;
+			margin-bottom: 6rem;
 			padding: 0.5rem 0.8rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 	}
 	// xr
@@ -288,6 +306,9 @@
 		&Button {
 			font-size: 1rem;
 			margin-bottom: 6rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 	}
 
@@ -313,6 +334,9 @@
 		&Button {
 			margin-bottom: 7rem;
 			padding: 0.5rem 0.8rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 	}
 
@@ -335,6 +359,9 @@
 			font-size: 0.9rem;
 			padding: 0.5rem 0.8rem;
 			margin-bottom: 4.5rem;
+			&:hover {
+				background-image: linear-gradient(transparent, transparent);
+			}
 		}
 
 		&Icon {

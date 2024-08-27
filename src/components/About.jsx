@@ -4,12 +4,12 @@ function About() {
 	return (
 		<div className={styles.aboutContainer}>
 			<div className={styles.transparentBackground}></div>
-            <BackButton/>
+			<BackButton />
 			<div className={styles.contentContainer}>
 				<div className={styles.imageContainer}>
 					<img
 						className={styles.image}
-						src="/images/aboutImages/image2.jpg"
+						src="images/aboutImages/image2.jpg"
 						alt="aboutImage"
 					/>
 				</div>

@@ -53,6 +53,7 @@ body {
 .contactIcon:hover {
 	transform: translateY(-3px) scale(1.1);
 	color: #212529;
+	cursor: pointer;
 }
 
 .contactIconWhite {
@@ -61,4 +62,101 @@ body {
 .contactIconWhite:hover {
 	transform: translateY(-3px) scale(1.1);
 	color: #fff;
+	cursor: pointer;
+}
+
+.navButton {
+	border-radius: 10rem;
+	color: #fff;
+	z-index: 10;
+	background-color: #1d1e20;
+	animation: movedown 1s;
+	animation-fill-mode: backwards;
+	transition: all 0.3s;
+	cursor: pointer;
+	width: 1rem;
+	height: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.desktopNavBack {
+	border-radius: 10rem;
+	z-index: 10;
+	padding: 0.5rem 1rem;
+	animation: movedown 1s;
+	animation-fill-mode: backwards;
+	transition: all 0.3s;
+	cursor: pointer;
+	width: 20%;
+}
+
+.backIcon {
+	background-color: #1d1e20;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 10rem;
+}
+
+@media only screen and (max-width: 26.75em) {
+	.navButton {
+		padding: 0.4rem 0.8rem;
+		font-size: 0.8rem;
+	}
+
+	.desktopNavBack {
+		padding: 0.4rem 0.8rem;
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 25.875em) {
+	.navButton {
+		padding: 0.4rem 0.8rem;
+		font-size: 0.8rem;
+	}
+
+	.desktopNavBack {
+		padding: 0.4rem 0.8rem;
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 23.438em) {
+	.navButton {
+		padding: 0.2rem 0.5rem;
+		font-size: 0.8rem;
+	}
+
+	.desktopNavBack {
+		padding: 0.2rem 0.5rem;
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 20em) {
+	.navButton {
+		padding: 0.2rem 0.5rem;
+		font-size: 0.8rem;
+	}
+
+	.desktopNavBack {
+		padding: 0.2rem 0.5rem;
+		font-size: 0.8rem;
+	}
+}
+
+
+
+@keyframes movedown {
+	0% {
+		opacity: 0;
+
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
