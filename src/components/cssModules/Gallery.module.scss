@@ -1,7 +1,31 @@
+.nav {
+	z-index: 20;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 5rem;
+
+	&Text {
+		z-index: 20;
+		color: #fff;
+		font-size: 1.5rem;
+		font-family: "New Amsterdam", sans-serif;
+		font-weight: lighter;
+		letter-spacing: 1.7px;
+		animation: movedown 1s;
+	}
+
+	@media only screen and (max-width: 56.25em) {
+		justify-content: center;
+		padding: 1rem 5rem;
+	}
+}
+
 .gallery {
 	display: flex;
 	justify-content: space-between;
-	padding: 5rem;
+	padding: 2rem 5rem;
 	overflow: visible;
 	position: relative;
 
@@ -14,22 +38,6 @@
 		background-image: url(/images/gallerybackground/image1.jpg);
 		background-size: cover;
 		background-position: center;
-		color: #fff;
-	}
-
-	&Heading {
-		position: absolute;
-		top: 3%;
-		left: 11%;
-		transform: translate(-50%, -50%);
-		z-index: 20;
-		color: #fff;
-		margin-bottom: 2rem;
-		font-size: 2rem;
-		font-family: "New Amsterdam", sans-serif;
-		font-weight: lighter;
-		letter-spacing: 1.7px;
-		animation: movedown 1s;
 	}
 
 	&Text {
@@ -37,15 +45,24 @@
 		color: #fff;
 		width: 50%;
 		z-index: 20;
+		@media only screen and (max-width: 56.25em) {
+			width: 100%;
+		}
 	}
 
 	&ImagePreview {
 		width: 50%;
 		z-index: 20;
+
+		@media only screen and (max-width: 56.25em) {
+			display: none;
+		}
+
+
 	}
 
 	@media only screen and (max-width: 26.75em) {
-		padding: 3rem 1rem;
+		padding: 1rem 1rem;
 
 		&Heading {
 			top: 3%;
@@ -64,7 +81,7 @@
 	}
 
 	@media only screen and (max-width: 25.875em) {
-		padding: 3rem 1rem;
+		padding: 1rem 1rem;
 
 		&Heading {
 			top: 3%;
@@ -83,7 +100,7 @@
 	}
 
 	@media only screen and (max-width: 23.438em) {
-		padding: 3rem 1rem;
+		padding: 1rem 1rem;
 
 		&Heading {
 			top: 3%;
@@ -102,7 +119,7 @@
 	}
 
 	@media only screen and (max-width: 20em) {
-		padding: 3rem 1rem;
+		padding: 1rem 1rem;
 
 		&Heading {
 			top: 3%;
@@ -119,6 +136,10 @@
 			display: none;
 		}
 	}
+
+	// @media only screen and (max-width:56.25em){
+	// 	padding: 0 5rem;
+	// }
 }
 
 @keyframes movedown {

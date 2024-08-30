@@ -13,18 +13,41 @@
 
 	&Year {
 		font-size: 1.3rem;
+		width: 65%;
+		@media only screen and (min-width: 37.5em) {
+			font-size: 1.7rem;
+		}
+		@media only screen and (min-width: 56.25em) {
+			font-size: 1.4rem;
+			margin-bottom: 0.5rem;
+		}
 	}
 
+	&TextContainer {
+		width: 35%;
+	}
 	&TextPrimary {
 		display: block;
 		letter-spacing: 1.5px;
 		font-size: 1.3rem;
+		@media only screen and (min-width: 37.5em) {
+			font-size: 1.7rem;
+		}
+		@media only screen and (min-width: 56.25em) {
+			font-size: 1.4rem;
+		}
 	}
 	&TextSecondary {
 		display: block;
 		letter-spacing: 1.5px;
 		font-size: 0.9rem;
 		opacity: 0.5;
+		@media only screen and (min-width: 37.5em) {
+			font-size: 1.1rem;
+		}
+		@media only screen and (min-width: 56.25em) {
+			font-size: .9rem;
+		}
 	}
 
 	&:hover {
@@ -38,9 +61,18 @@
 		color: #050203;
 		transform: translateX(-1rem);
 		cursor: pointer;
+
+		@media only screen and (max-width: 56.25em) {
+			background-image: none;
+			color: #fff;
+			transform: translateX(0);
+		}
 	}
 	&:active {
 		transform: translateY(0.5rem) translateX(-1rem);
+		@media only screen and (max-width: 56.25em) {
+			transform: translateX(0) translateY(0);
+		}
 	}
 
 	@media only screen and (max-width: 26.75em) {
@@ -155,10 +187,10 @@
 		}
 
 		&TextPrimary {
-			font-size: 1rem;
+			font-size: 0.8rem;
 		}
 		&TextSecondary {
-			font-size: 0.7rem;
+			font-size: 0.5rem;
 		}
 	}
 }

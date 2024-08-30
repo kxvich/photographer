@@ -7,7 +7,13 @@
 	background-position: center;
 	background-size: cover;
 	padding: 0 5rem;
+
 	position: relative;
+
+	@media only screen and (max-width: 56.25em) {
+		padding: 9rem 1rem 3rem 1rem;
+		background-image: none;
+	}
 }
 
 .transparentBackground {
@@ -15,22 +21,33 @@
 	top: 0;
 	right: 0;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	z-index: 5;
+	@media only screen and (max-width: 56.25em) {
+		display: none;
+	}
 }
-
 
 .contentContainer {
 	display: flex;
-	height: 80vh;
+	width: 100rem;
 	z-index: 10;
 	animation: scale 1s;
 	animation-fill-mode: backwards;
+
+	@media only screen and (max-width: 56.25em) {
+		flex-direction: column;
+	}
+
+	@media only screen and (max-width: 20em) {
+		height: 35rem;
+	}
 }
 
 .imageContainer {
-	width: 50%;
+	width: 100%;
+	height: 30rem;
 }
 
 .image {
@@ -47,6 +64,14 @@
 	font-family: "New Amsterdam", sans-serif;
 
 	position: relative;
+	@media only screen and (max-width: 56.25em) {
+		margin-bottom: 5rem;
+		padding: 0;
+		width: 100%;
+		padding: 2rem 0.5rem;
+		background-color: #fff;
+		color: #1d1e20;
+	}
 }
 .greeting {
 	letter-spacing: 3px;
@@ -54,6 +79,9 @@
 	margin-bottom: 0.5rem;
 	animation: movedown 1s 0.25s;
 	animation-fill-mode: backwards;
+	@media only screen and (max-width: 56.25em) {
+		font-size: 1.2rem;
+	}
 }
 
 .paragraph {
@@ -64,6 +92,11 @@
 	margin-bottom: 1rem;
 	animation: movedown 1s 0.5s;
 	animation-fill-mode: backwards;
+
+	@media only screen and (max-width: 31.25em) {
+		font-size: 1rem;
+		font-weight: bold;
+	}
 }
 
 .email {
@@ -71,17 +104,18 @@
 	font-size: 1rem;
 	animation: movedown 1s 0.75s;
 	animation-fill-mode: backwards;
-    cursor: pointer;
+	cursor: pointer;
+
+	@media only screen and (min-width: 80em) {
+		margin-bottom: 13rem;
+	}
 }
 
 .contact {
-	position: absolute;
-	bottom: 15%;
-	right: 15%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	width: 20%;
+	width: 100%;
 	animation: movedown 1s 0.95s;
 	animation-fill-mode: backwards;
 }
@@ -90,6 +124,10 @@
 	transition: all 0.2s;
 	font-size: 1.5rem;
 	cursor: pointer;
+
+	&:not(:last-child) {
+		margin-right: 2rem;
+	}
 }
 
 .contact i:hover {

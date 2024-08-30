@@ -4,11 +4,23 @@ import Work from "./Works";
 import WorkPreview from "./WorkPreview";
 import { Link } from "react-router-dom";
 import Contact from "./Contact";
+import useMediaQuery from "../Hooks/useMediaQuery";
 
 const galleryContext = createContext();
 
 function Gallery() {
 	const [selectedId, setselectedId] = useState(null);
+	const workNames = [
+		"Smj x Davido",
+		"Smj x Tiwa Savage",
+		"Smj x Roddy Rich",
+		"Smj x Pocolee",
+		"Smj x Rahman Jago",
+		"Smj x Zlatan",
+		"Smj x Don Jazzy",
+		"Smj x Victony",
+	];
+	const isDesktop = useMediaQuery("(min-width: 960px)");
 
 	function handleSelect(id) {
 		setselectedId((selectedId) => (selectedId === id ? null : id));
@@ -20,12 +32,13 @@ function Gallery() {
 		<galleryContext.Provider
 			value={{ selectedId, handleSelect, handleUnselect }}
 		>
+			<div className={styles.nav}>
+				<h2 className={styles.navText}>PAST WORK</h2>
+				{isDesktop && <Contact decor={"contactIcon"} />}
+			</div>
 			<div className={styles.gallery}>
 				<div className={styles.galleryBackground}></div>
-				<h2 className={styles.galleryHeading}>PAST WORK</h2>
-				<Contact decor={"contactIcon"} />
 				<div
-					
 					style={{
 						backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/workbackground/image${selectedId}.jpg)`,
 						backgroundPosition: "center",
@@ -41,7 +54,12 @@ function Gallery() {
 				></div>
 				<Link to="/workpage" className={styles.galleryText}>
 					{Array.from({ length: 8 }, (_, i) => (
-						<Work onHandleSelect={() => handleSelect(i + 1)} key={i} />
+						<Work
+							index={i < 9 ? `0${i + 1}` : i + 1}
+							onHandleSelect={() => handleSelect(i + 1)}
+							key={i}
+							workNames={workNames[i]}
+						/>
 					))}
 				</Link>
 				<div className={styles.galleryImagePreview}>
