@@ -1,13 +1,13 @@
 import styles from './cssModules/WorkTitle.module.scss'
 
-function workTitle() {
+function workTitle({title}) {
     return (
         <div>
             <h1 className={styles.workTitle}>
 					<span className={styles.workTitleIcon}>
 						<i className="fa-regular fa-circle"></i>
 					</span>
-					SMJ X DAVIDO
+					{title}
 				</h1>
         </div>
     )

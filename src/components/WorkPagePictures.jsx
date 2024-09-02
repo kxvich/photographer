@@ -1,19 +1,30 @@
 import styles from "./cssModules/WorkPagePictures.module.scss";
+import PropTypes from 'prop-types';
 
-function WorkPagePictures() {
+function WorkPagePictures({images}) {
 	return (
 		<>
-			{Array.from({ length: 2 }, (val, i) => (
+			{images.map((image, i)  => (
 				<div className={styles.workPagePicturesContainer} key={i}>
 					<img
 						className={styles.workPagePicturesImage}
-						src={`images/work1/image${i + 1}.jpg`}
+						src={image.url}
+						alt={image.title}
 					></img>
-                    <h3 className={styles.workPagePicturesBottomTitle}>SMJ X DAVIDO</h3>|
+                    <h3 className={styles.workPagePicturesBottomTitle}>{image.title}</h3>|
 				</div>
 			))}
 		</>
 	);
 }
+
+WorkPagePictures.propTypes = {
+	images: PropTypes.arrayOf(
+	  PropTypes.shape({
+		url: PropTypes.string.isRequired,
+		title: PropTypes.string
+	  })
+	).isRequired
+  };
 
 export default WorkPagePictures;

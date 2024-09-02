@@ -7,14 +7,14 @@ import { useState } from "react";
 function Header() {
 	const images = [
 		// "/photographer/images/homescreen.jpg",
-		"images/workbackground/image1.jpg",
-		"images/workbackground/image2.jpg",
-		"images/workbackground/image3.jpg",
-		"images/workbackground/image4.jpg",
-		"images/workbackground/image5.jpg",
-		"images/workbackground/image6.jpg",
-		"images/workbackground/image7.jpg",
-		"images/workbackground/image8.jpg",
+		"images/image1.jpg",
+		"images/image2.jpg",
+		"images/image3.jpg",
+		"images/image4.jpg",
+		"images/image5.jpg",
+		"images/image6.jpg",
+		"images/image7.jpg",
+		"images/image8.jpg",
 	];
 	// // eslint-disable-next-line no-unused-vars
 	const [bgImage1, setBgImage1] = useState(images[5]);

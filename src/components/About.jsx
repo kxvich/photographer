@@ -5,14 +5,12 @@ import MobileNav from "./MobileNav";
 import { useContext } from "react";
 import { AppContext } from "../App";
 import SideBar from "./SideBar";
-import DesktopNav from "./DesktopNav";
 function About() {
 	const isDesktop = useMediaQuery("(min-width: 960px)");
 	const { isOpen } = useContext(AppContext);
 
 	return (
 		<>
-			{isDesktop && <DesktopNav/>}
 			{!isDesktop ? <MobileNav /> : ""}
 			{isOpen && <SideBar />}
 			<div className={styles.aboutContainer}>

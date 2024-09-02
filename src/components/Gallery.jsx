@@ -1,15 +1,16 @@
-import { createContext, useState } from "react";
+import { createContext, useContext } from "react";
 import styles from "./cssModules/Gallery.module.scss";
 import Work from "./Works";
 import WorkPreview from "./WorkPreview";
 import { Link } from "react-router-dom";
 import Contact from "./Contact";
 import useMediaQuery from "../Hooks/useMediaQuery";
+import { AppContext } from "../App";
 
 const galleryContext = createContext();
 
 function Gallery() {
-	const [selectedId, setselectedId] = useState(null);
+	const {selectedId,setselectedId} = useContext(AppContext)
 	const workNames = [
 		"Smj x Davido",
 		"Smj x Tiwa Savage",
@@ -40,7 +41,7 @@ function Gallery() {
 				<div className={styles.galleryBackground}></div>
 				<div
 					style={{
-						backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/workbackground/image${selectedId}.jpg)`,
+						backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/gallerydynamicbackground/image${selectedId}.jpg)`,
 						backgroundPosition: "center",
 						backgroundRepeat: "no-repeat",
 						backgroundSize: "cover",

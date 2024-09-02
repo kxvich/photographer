@@ -11,6 +11,8 @@ const AppContext = createContext();
 function App() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [isOpen, setIsOpen] = useState(false);
+	const [selectedId, setselectedId] = useState(null);
+
 
 	useEffect(function () {
 		function welcome() {
@@ -26,7 +28,7 @@ function App() {
 	return (
 		<>
 			{isLoading && <Welcome />}
-			<AppContext.Provider value={{ isOpen, setIsOpen }}>
+			<AppContext.Provider value={{ isOpen, setIsOpen, setselectedId,selectedId }}>
 				<BrowserRouter>
 					<ScrollToTop />
 					<Routes>
