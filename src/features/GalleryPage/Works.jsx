@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import styles from "./cssModules/Work.module.scss";
-import { galleryContext } from "./Gallery";
+import styles from "../GalleryPage/Work.module.scss";
+import { galleryContext } from "../GalleryPage/Gallery";
 /* eslint-disable react/prop-types */
 function Work({ onHandleSelect, index, workNames }) {
     const {handleUnselect} = useContext(galleryContext)

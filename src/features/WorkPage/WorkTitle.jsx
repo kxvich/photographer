@@ -1,4 +1,4 @@
-import styles from './cssModules/WorkTitle.module.scss'
+import styles from '../WorkPage/WorkTitle.module.scss'
 
 function workTitle({title}) {
     return (

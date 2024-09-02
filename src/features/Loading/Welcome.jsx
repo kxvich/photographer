@@ -1,4 +1,4 @@
-import styles from "./cssModules/Loader.module.scss";
+import styles from "../Loading/Loader.module.scss";
 
 function Welcome() {
 	return (

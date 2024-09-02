@@ -1,4 +1,4 @@
-import styles from "./cssModules/WorkPagePictures.module.scss";
+import styles from "../WorkPage/WorkPagePictures.module.scss";
 import PropTypes from 'prop-types';
 
 function WorkPagePictures({images}) {

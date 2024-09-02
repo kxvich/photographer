@@ -1,10 +1,10 @@
 import { createContext, useEffect, useState } from "react";
-import Header from "./components/Header";
-import Welcome from "./components/Welcome";
+import Header from "./features/Homepage/Header";
+import Welcome from "./features/Loading/Welcome";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Gallery } from "./components/Gallery";
-import WorkPage from "./components/WorkPage";
-import About from "./components/About";
+import { Gallery } from "./features/GalleryPage/Gallery";
+import WorkPage from "./features/WorkPage/WorkPage";
+import About from "./features/About/About";
 import ScrollToTop from "./Hooks/ScrollToTop";
 const AppContext = createContext();
 
@@ -12,7 +12,6 @@ function App() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedId, setselectedId] = useState(null);
-
 
 	useEffect(function () {
 		function welcome() {
@@ -28,7 +27,9 @@ function App() {
 	return (
 		<>
 			{isLoading && <Welcome />}
-			<AppContext.Provider value={{ isOpen, setIsOpen, setselectedId,selectedId }}>
+			<AppContext.Provider
+				value={{ isOpen, setIsOpen, setselectedId, selectedId }}
+			>
 				<BrowserRouter>
 					<ScrollToTop />
 					<Routes>
@@ -48,4 +49,4 @@ function App() {
 	);
 }
 
-export { App, AppContext};
+export { App, AppContext };

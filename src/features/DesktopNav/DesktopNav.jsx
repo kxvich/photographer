@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
-import Contact from "./Contact";
-import styles from "./cssModules/DesktopNav.module.scss";
+import BackButton from "../BackButton/BackButton";
+import Contact from "../Contact/Contact";
+import styles from "../DesktopNav/DesktopNav.module.scss";
 
 function DesktopNav() {
 	return (

@@ -1,4 +1,4 @@
-import styles from "./cssModules/Contact.module.scss";
+import styles from "../Contact/Contact.module.scss";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types

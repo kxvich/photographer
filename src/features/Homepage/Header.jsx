@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./cssModules/Header.module.scss";
+import styles from "../Homepage/Header.module.scss";
 
 import { useState } from "react";
 // import { useEffect } from "react";
@@ -7,14 +7,14 @@ import { useState } from "react";
 function Header() {
 	const images = [
 		// "/photographer/images/homescreen.jpg",
-		"images/image1.jpg",
-		"images/image2.jpg",
-		"images/image3.jpg",
-		"images/image4.jpg",
-		"images/image5.jpg",
-		"images/image6.jpg",
-		"images/image7.jpg",
-		"images/image8.jpg",
+		"images/homescreenimages/image1.jpg",
+		"images/homescreenimages/image2.jpg",
+		"images/homescreenimages/image3.jpg",
+		"images/homescreenimages/image4.jpg",
+		"images/homescreenimages/image5.jpg",
+		"images/homescreenimages/image6.jpg",
+		"images/homescreenimages/image7.jpg",
+		"images/homescreenimages/image8.jpg",
 	];
 	// // eslint-disable-next-line no-unused-vars
 	const [bgImage1, setBgImage1] = useState(images[5]);

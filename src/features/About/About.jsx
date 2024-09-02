@@ -1,10 +1,10 @@
 // import BackButton from "./BackButton";
-import styles from "./cssModules/About.module.scss";
-import useMediaQuery from "../Hooks/useMediaQuery";
-import MobileNav from "./MobileNav";
+import styles from "../About/About.module.scss"
+import useMediaQuery from "../../Hooks/useMediaQuery";
+import MobileNav from "../../features/MobileNav/MobileNav";
 import { useContext } from "react";
-import { AppContext } from "../App";
-import SideBar from "./SideBar";
+import { AppContext } from "../../App";
+import SideBar from "../SideBar/SideBar";
 function About() {
 	const isDesktop = useMediaQuery("(min-width: 960px)");
 	const { isOpen } = useContext(AppContext);

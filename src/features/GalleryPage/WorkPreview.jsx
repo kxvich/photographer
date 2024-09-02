@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import styles from "./cssModules/WorkPreview.module.scss";
-import { galleryContext } from "./Gallery";
+import styles from "../GalleryPage/WorkPreview.module.scss";
+import { galleryContext } from "../GalleryPage/Gallery";
 
 function WorkPreview() {
 	const { selectedId } = useContext(galleryContext);
@@ -8,7 +8,7 @@ function WorkPreview() {
 		<div className={styles.workPreview}>
 			<img
 				className={styles.workPreviewImage}
-				src={`/images/image${selectedId}.jpg`}
+				src={`/images/gallerypreviewimages/image${selectedId}.jpg`}
 				alt="workpreview"
 			/>
 		</div>

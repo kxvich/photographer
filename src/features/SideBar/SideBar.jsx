@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from "./cssModules/SideBar.module.scss";
+import styles from "../SideBar/SideBar.module.scss";
 import { useContext } from "react";
-import { AppContext } from "../App";
+import { AppContext } from "../../App";
 
 function SideBar() {
 	const { setIsOpen } = useContext(AppContext);

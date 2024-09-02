@@ -1,11 +1,11 @@
 import { createContext, useContext } from "react";
-import styles from "./cssModules/Gallery.module.scss";
-import Work from "./Works";
-import WorkPreview from "./WorkPreview";
+import styles from "../GalleryPage/Gallery.module.scss";
+import Work from "../GalleryPage/Works";
+import WorkPreview from "../GalleryPage/WorkPreview";
 import { Link } from "react-router-dom";
-import Contact from "./Contact";
-import useMediaQuery from "../Hooks/useMediaQuery";
-import { AppContext } from "../App";
+import Contact from "../Contact/Contact";
+import useMediaQuery from "../../Hooks/useMediaQuery";
+import { AppContext } from "../../App";
 
 const galleryContext = createContext();
 
