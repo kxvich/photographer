@@ -16,6 +16,12 @@ const work1Images = [
 const work2Images = [
 	{ url: "images/work2/image1.jpg", title: "SMJ X TIWA SAVAGE" },
 	{ url: "images/work2/image2.jpg", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image3.jpg", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image4.jpg", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image5.jpg", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image6.jpg", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image7.jpg", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image8.jpg", title: "SMJ X TIWA SAVAGE" },
 ];
 
 const work3Images = [

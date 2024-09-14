@@ -16,9 +16,13 @@ function Gallery() {
 		"Smj x Tiwa Savage",
 		"Smj x Roddy Rich",
 		"Smj x Pocolee",
-		"Smj x Rahman Jago",
 		"Smj x Zlatan",
+		"Smj x Young Jonn",
 		"Smj x Don Jazzy",
+		"Smj x Adekunle Gold",
+		"Smj x Rema",
+		"Smj x Shallipopi",
+		"Smj x Falz",
 		"Smj x Victony",
 	];
 	const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -41,7 +45,7 @@ function Gallery() {
 				<div className={styles.galleryBackground}></div>
 				<div
 					style={{
-						backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/gallerydynamicbackground/image${selectedId}.jpg)`,
+						backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/gallerydynamicbackground/image${selectedId}.webp)`,
 						backgroundPosition: "center",
 						backgroundRepeat: "no-repeat",
 						backgroundSize: "cover",
@@ -54,7 +58,7 @@ function Gallery() {
 					}}
 				></div>
 				<Link to="/workpage" className={styles.galleryText}>
-					{Array.from({ length: 8 }, (_, i) => (
+					{Array.from({ length: 12 }, (_, i) => (
 						<Work
 							index={i < 9 ? `0${i + 1}` : i + 1}
 							onHandleSelect={() => handleSelect(i + 1)}

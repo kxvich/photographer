@@ -8,7 +8,7 @@ function WorkPreview() {
 		<div className={styles.workPreview}>
 			<img
 				className={styles.workPreviewImage}
-				src={`/images/gallerypreviewimages/image${selectedId}.jpg`}
+				src={`/images/gallerypreviewimages/image${selectedId}.webp`}
 				alt="workpreview"
 			/>
 		</div>
