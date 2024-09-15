@@ -9,39 +9,51 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 
 const work1Images = [
-	{ url: "images/work1/image1.jpg", title: "SMJ X DAVIDO" },
-	{ url: "images/work1/image2.jpg", title: "SMJ X DAVIDO" },
+	{ url: "images/work1/image1.webp", title: "SMJ X DAVIDO" },
+	{ url: "images/work1/image2.webp", title: "SMJ X DAVIDO" },
+	{ url: "images/work1/image3.webp", title: "SMJ X DAVIDO" },
+	{ url: "images/work1/image4.webp", title: "SMJ X DAVIDO" },
+	{ url: "images/work1/image5.webp", title: "SMJ X DAVIDO" },
 ];
 
 const work2Images = [
-	{ url: "images/work2/image1.jpg", title: "SMJ X TIWA SAVAGE" },
-	{ url: "images/work2/image2.jpg", title: "SMJ X TIWA SAVAGE" },
-	{ url: "images/work2/image3.jpg", title: "SMJ X TIWA SAVAGE" },
-	{ url: "images/work2/image4.jpg", title: "SMJ X TIWA SAVAGE" },
-	{ url: "images/work2/image5.jpg", title: "SMJ X TIWA SAVAGE" },
-	{ url: "images/work2/image6.jpg", title: "SMJ X TIWA SAVAGE" },
-	{ url: "images/work2/image7.jpg", title: "SMJ X TIWA SAVAGE" },
-	{ url: "images/work2/image8.jpg", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image1.webp", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image2.webp", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image3.webp", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image4.webp", title: "SMJ X TIWA SAVAGE" },
+	{ url: "images/work2/image5.webp", title: "SMJ X TIWA SAVAGE" },
 ];
 
 const work3Images = [
-	{ url: "images/work3/image1.jpg", title: "SMJ X RODDY RICH" },
-	{ url: "images/work3/image2.jpg", title: "SMJ X RODDY RICH" },
+	{ url: "images/work3/image1.webp", title: "SMJ X RODDY RICH" },
+	{ url: "images/work3/image2.webp", title: "SMJ X RODDY RICH" },
+	{ url: "images/work3/image3.webp", title: "SMJ X RODDY RICH" },
+	{ url: "images/work3/image4.webp", title: "SMJ X RODDY RICH" },
+	{ url: "images/work3/image5.webp", title: "SMJ X RODDY RICH" },
 ];
 
 const work4Images = [
-	{ url: "images/work1/image1.jpg", title: "SMJ X POCOLEE" },
-	{ url: "images/work1/image2.jpg", title: "SMJ X POCOLEE" },
+	{ url: "images/work4/image1.webp", title: "SMJ X POCOLEE" },
+	{ url: "images/work4/image2.webp", title: "SMJ X POCOLEE" },
+	{ url: "images/work4/image3.webp", title: "SMJ X POCOLEE" },
+	{ url: "images/work4/image4.webp", title: "SMJ X POCOLEE" },
 ];
 
 const work5Images = [
-	{ url: "images/work2/image1.jpg", title: "SMJ X RAHMAN JAGO" },
-	{ url: "images/work2/image2.jpg", title: "SMJ X RAHMAN JAGO" },
+	{ url: "images/work5/image1.webp", title: "SMJ X ZLATAN " },
+	{ url: "images/work5/image2.webp", title: "SMJ X ZLATAN " },
+	{ url: "images/work5/image3.webp", title: "SMJ X ZLATAN " },
+	{ url: "images/work5/image4.webp", title: "SMJ X ZLATAN " },
+	{ url: "images/work5/image5.webp", title: "SMJ X ZLATAN " },
 ];
 
 const work6Images = [
-	{ url: "images/work3/image1.jpg", title: "SMJ X ZLATAN " },
-	{ url: "images/work3/image2.jpg", title: "SMJ X ZLATAN " },
+	{ url: "images/work6/image1.webp", title: "SMJ X YOUNG JONN " },
+	{ url: "images/work6/image2.webp", title: "SMJ X YOUNG JONN " },
+	{ url: "images/work6/image3.webp", title: "SMJ X YOUNG JONN " },
+	{ url: "images/work6/image4.webp", title: "SMJ X YOUNG JONN " },
+	{ url: "images/work6/image5.webp", title: "SMJ X YOUNG JONN " },
+	
 ];
 
 const work7Images = [
