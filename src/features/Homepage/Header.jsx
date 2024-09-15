@@ -7,6 +7,7 @@ import { useState } from "react";
 function Header() {
 	const images = [
 		// "/photographer/images/homescreen.jpg",
+		"images/homescreenimages/homescreen2.webp",
 		"images/homescreenimages/image1.jpg",
 		"images/homescreenimages/image2.jpg",
 		"images/homescreenimages/image3.jpg",
@@ -17,7 +18,7 @@ function Header() {
 		"images/homescreenimages/image8.jpg",
 	];
 	// // eslint-disable-next-line no-unused-vars
-	const [bgImage1, setBgImage1] = useState(images[5]);
+	const [bgImage1, setBgImage1] = useState(images[0]);
 	// const [bgImage2, setBgImage2] = useState(images[1]);
 	// const [fadeIn, setFadeIn] = useState(false);
 

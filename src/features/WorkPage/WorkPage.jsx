@@ -40,11 +40,11 @@ const work4Images = [
 ];
 
 const work5Images = [
-	{ url: "images/work5/image1.webp", title: "SMJ X ZLATAN " },
-	{ url: "images/work5/image2.webp", title: "SMJ X ZLATAN " },
-	{ url: "images/work5/image3.webp", title: "SMJ X ZLATAN " },
-	{ url: "images/work5/image4.webp", title: "SMJ X ZLATAN " },
-	{ url: "images/work5/image5.webp", title: "SMJ X ZLATAN " },
+	{ url: "images/work5/image1.webp", title: "WEDDINGS " },
+	{ url: "images/work5/image2.webp", title: "WEDDINGS " },
+	{ url: "images/work5/image3.webp", title: "WEDDINGS " },
+	{ url: "images/work5/image4.webp", title: "WEDDINGS " },
+	{ url: "images/work5/image5.webp", title: "WEDDINGS " },
 ];
 
 const work6Images = [
@@ -108,6 +108,22 @@ const work13Images = [
 	{ url: "images/work13/image5.webp", title: "SMJ X  REMINISCE " },
 ];
 
+const work14Images = [
+	{ url: "images/work14/image1.webp", title: "SMJ X  TIMINI " },
+	{ url: "images/work14/image2.webp", title: "SMJ X  TIMINI " },
+	{ url: "images/work14/image3.webp", title: "SMJ X  TIMINI " },
+	{ url: "images/work14/image4.webp", title: "SMJ X  TIMINI " },
+	{ url: "images/work14/image5.webp", title: "SMJ X  TIMINI " },
+];
+
+const work15Images = [
+	{ url: "images/work15/image1.webp", title: "SMJ X ZLATAN" },
+	{ url: "images/work15/image2.webp", title: "SMJ X ZLATAN" },
+	{ url: "images/work15/image3.webp", title: "SMJ X ZLATAN" },
+	{ url: "images/work15/image4.webp", title: "SMJ X ZLATAN" },
+	{ url: "images/work15/image5.webp", title: "SMJ X ZLATAN" },
+];
+
 const imagesGroup = [
 	work1Images,
 	work2Images,
@@ -121,11 +137,15 @@ const imagesGroup = [
 	work10Images,
 	work11Images,
 	work12Images,
-	work13Images
+	work13Images,
+	work14Images,
+	work15Images,
+
 ];
 
 function WorkPage() {
 	const { isOpen, selectedId } = useContext(AppContext);
+	console.log(selectedId)
 	const isDesktop = useMediaQuery("(min-width: 960px)");
 	// const isMobile = useMediaQuery("(max-width: 500px)")
 	return (

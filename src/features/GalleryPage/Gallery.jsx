@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useEffect } from "react";
 import styles from "../GalleryPage/Gallery.module.scss";
 import Work from "../GalleryPage/Works";
 import WorkPreview from "../GalleryPage/WorkPreview";
@@ -10,13 +10,17 @@ import { AppContext } from "../../App";
 const galleryContext = createContext();
 
 function Gallery() {
-	const {selectedId,setselectedId} = useContext(AppContext)
+	const { selectedId, setselectedId } = useContext(AppContext);
+
+	useEffect(() => {
+		setselectedId(null);
+	}, [setselectedId]);
 	const workNames = [
 		"Smj x Davido",
 		"Smj x Tiwa Savage",
 		"Smj x Roddy Rich",
 		"Smj x Pocolee",
-		"Smj x Zlatan",
+		"Weddings",
 		"Smj x Young Jonn",
 		"Smj x Don Jazzy",
 		"Smj x Adekunle Gold",
@@ -24,7 +28,9 @@ function Gallery() {
 		"Smj x Shallipopi",
 		"Smj x Falz",
 		"Smj x Victony",
-		"Smj x Reminisce"
+		"Smj x Reminisce",
+		"Smj x Timini",
+		"Smj x Zlatan"
 	];
 	const isDesktop = useMediaQuery("(min-width: 960px)");
 
@@ -58,8 +64,8 @@ function Gallery() {
 						transition: "opacity 1s",
 					}}
 				></div>
-				<Link to="/workpage" className={styles.galleryText}>
-					{Array.from({ length: 13 }, (_, i) => (
+				<Link to={`/workpage`} className={styles.galleryText}>
+					{Array.from({ length: 15 }, (_, i) => (
 						<Work
 							index={i < 9 ? `0${i + 1}` : i + 1}
 							onHandleSelect={() => handleSelect(i + 1)}

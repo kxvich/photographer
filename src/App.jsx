@@ -11,7 +11,16 @@ const AppContext = createContext();
 function App() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [isOpen, setIsOpen] = useState(false);
-	const [selectedId, setselectedId] = useState(null);
+	const [selectedId, setselectedId] = useState(() => {
+		const savedId = localStorage.getItem("selectedId");
+		return savedId ? JSON.parse(savedId) : null;
+	});
+
+	useEffect(() => {
+		if (selectedId !== null) {
+			localStorage.setItem("selectedId", JSON.stringify(selectedId));
+		}
+	}, [selectedId]);
 
 	useEffect(function () {
 		function welcome() {
