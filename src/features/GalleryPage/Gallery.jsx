@@ -24,6 +24,7 @@ function Gallery() {
 		"Smj x Shallipopi",
 		"Smj x Falz",
 		"Smj x Victony",
+		"Smj x Reminisce"
 	];
 	const isDesktop = useMediaQuery("(min-width: 960px)");
 
@@ -58,7 +59,7 @@ function Gallery() {
 					}}
 				></div>
 				<Link to="/workpage" className={styles.galleryText}>
-					{Array.from({ length: 12 }, (_, i) => (
+					{Array.from({ length: 13 }, (_, i) => (
 						<Work
 							index={i < 9 ? `0${i + 1}` : i + 1}
 							onHandleSelect={() => handleSelect(i + 1)}

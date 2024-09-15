@@ -53,17 +53,59 @@ const work6Images = [
 	{ url: "images/work6/image3.webp", title: "SMJ X YOUNG JONN " },
 	{ url: "images/work6/image4.webp", title: "SMJ X YOUNG JONN " },
 	{ url: "images/work6/image5.webp", title: "SMJ X YOUNG JONN " },
-	
 ];
 
 const work7Images = [
-	{ url: "images/work3/image1.jpg", title: "SMJ X DON JAZZY " },
-	{ url: "images/work3/image2.jpg", title: "SMJ X DON JAZZY " },
+	{ url: "images/work7/image1.webp", title: "SMJ X DON JAZZY " },
+	{ url: "images/work7/image2.webp", title: "SMJ X DON JAZZY " },
+	{ url: "images/work7/image3.webp", title: "SMJ X DON JAZZY " },
 ];
 
 const work8Images = [
-	{ url: "images/work3/image1.jpg", title: "SMJ X VICTONY " },
-	{ url: "images/work3/image2.jpg", title: "SMJ X VICTONY " },
+	{ url: "images/work8/image1.webp", title: "SMJ X ADEKUNLE GOLD " },
+	{ url: "images/work8/image2.webp", title: "SMJ X ADEKUNLE GOLD " },
+	{ url: "images/work8/image3.webp", title: "SMJ X ADEKUNLE GOLD " },
+	{ url: "images/work8/image4.webp", title: "SMJ X ADEKUNLE GOLD " },
+	{ url: "images/work8/image5.webp", title: "SMJ X ADEKUNLE GOLD " },
+];
+
+const work9Images = [
+	{ url: "images/work9/image1.webp", title: "SMJ X  REMA " },
+	{ url: "images/work9/image2.webp", title: "SMJ X  REMA " },
+	{ url: "images/work9/image3.webp", title: "SMJ X  REMA " },
+	{ url: "images/work9/image4.webp", title: "SMJ X  REMA " },
+	{ url: "images/work9/image5.webp", title: "SMJ X  REMA " },
+];
+
+const work10Images = [
+	{ url: "images/work10/image2.webp", title: "SMJ X  SHALLIPOPI " },
+	{ url: "images/work10/image3.webp", title: "SMJ X  SHALLIPOPI " },
+	{ url: "images/work10/image4.webp", title: "SMJ X  SHALLIPOPI " },
+	{ url: "images/work10/image5.webp", title: "SMJ X  SHALLIPOPI " },
+];
+
+const work11Images = [
+	{ url: "images/work11/image1.webp", title: "SMJ X  FALZ " },
+	{ url: "images/work11/image2.webp", title: "SMJ X  FALZ " },
+	{ url: "images/work11/image3.webp", title: "SMJ X  FALZ " },
+	{ url: "images/work11/image4.webp", title: "SMJ X  FALZ " },
+	{ url: "images/work11/image5.webp", title: "SMJ X  FALZ " },
+];
+
+const work12Images = [
+	{ url: "images/work12/image1.webp", title: "SMJ X  VICTONY " },
+	{ url: "images/work12/image2.webp", title: "SMJ X  VICTONY " },
+	{ url: "images/work12/image3.webp", title: "SMJ X  VICTONY " },
+	{ url: "images/work12/image4.webp", title: "SMJ X  VICTONY " },
+	{ url: "images/work12/image5.webp", title: "SMJ X  VICTONY " },
+];
+
+const work13Images = [
+	{ url: "images/work13/image1.webp", title: "SMJ X  REMINISCE " },
+	{ url: "images/work13/image2.webp", title: "SMJ X  REMINISCE " },
+	{ url: "images/work13/image3.webp", title: "SMJ X  REMINISCE " },
+	{ url: "images/work13/image4.webp", title: "SMJ X  REMINISCE " },
+	{ url: "images/work13/image5.webp", title: "SMJ X  REMINISCE " },
 ];
 
 const imagesGroup = [
@@ -75,6 +117,11 @@ const imagesGroup = [
 	work6Images,
 	work7Images,
 	work8Images,
+	work9Images,
+	work10Images,
+	work11Images,
+	work12Images,
+	work13Images
 ];
 
 function WorkPage() {
