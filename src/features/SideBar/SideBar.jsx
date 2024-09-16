@@ -20,6 +20,9 @@ function SideBar() {
 				<Link onClick={() => setIsOpen(false)}  to="/gallery" className={styles.sideBarMenuItem}>
 					Past Work
 				</Link>
+				<Link onClick={() => setIsOpen(false)}  to="/bookings" className={styles.sideBarMenuItem}>
+					Book Me
+				</Link>
 			</div>
 			<div className={styles.sideBarIconContainer}>
 				<i className={"fa-brands fa-facebook"}></i>

@@ -1,10 +1,11 @@
 // import BackButton from "./BackButton";
-import styles from "../About/About.module.scss"
+import styles from "../About/About.module.scss";
 import useMediaQuery from "../../Hooks/useMediaQuery";
 import MobileNav from "../../features/MobileNav/MobileNav";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import SideBar from "../SideBar/SideBar";
+import BackButton from "../BackButton/BackButton";
 function About() {
 	const isDesktop = useMediaQuery("(min-width: 960px)");
 	const { isOpen } = useContext(AppContext);
@@ -16,6 +17,7 @@ function About() {
 			<div className={styles.aboutContainer}>
 				<div className={styles.transparentBackground}></div>
 				<div className={styles.contentContainer}>
+					{isDesktop ? <BackButton /> : ""}
 					<div className={styles.imageContainer}>
 						<img
 							className={styles.image}

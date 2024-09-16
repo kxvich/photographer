@@ -1,0 +1,72 @@
+.container {
+	height: 100vh;
+	width: 100%;
+	background-color: #212529;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	width: 70%;
+	height: 80%;
+	background-color: #fff;
+	border-radius: 2rem;
+	padding: 2rem;
+	font-family: "New Amsterdam", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	&Item {
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+
+		@media only screen and (max-width: 56.25rem) {
+			width: 70%;
+		}
+
+		@media only screen and (max-width: 20rem) {
+			width: 70%;
+			font-size: 0.5rem;
+		}
+	}
+
+	&Label {
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+		@media only screen and (max-width: 20rem) {
+			font-size: 1rem;
+		}
+	}
+
+	&Input {
+		padding: 0.3rem;
+		margin-bottom: 0.5rem;
+		&:focus {
+			outline: none;
+
+		}
+        @media only screen and (max-width: 20rem) {
+			padding: 0;
+		}
+	}
+
+	&Button {
+		margin-top: 2rem;
+		padding: 1rem 2rem;
+		background-color: #212529;
+		border: none;
+		border-radius: 2rem;
+		color: #fff;
+		cursor: pointer;
+        
+        @media only screen and (max-width: 20rem) {
+			// padding: .5rem;
+            font-size: .9rem;
+		}
+	}
+}

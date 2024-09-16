@@ -6,6 +6,7 @@ import { Gallery } from "./features/GalleryPage/Gallery";
 import WorkPage from "./features/WorkPage/WorkPage";
 import About from "./features/About/About";
 import ScrollToTop from "./Hooks/ScrollToTop";
+import Bookings from "./features/Bookings/Bookings";
 const AppContext = createContext();
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
 							element={!isLoading && <WorkPage />}
 						></Route>
 						<Route path="/about" element={!isLoading && <About />} />
+						<Route path="/bookings" element={!isLoading && <Bookings />} />
 					</Routes>
 				</BrowserRouter>
 			</AppContext.Provider>

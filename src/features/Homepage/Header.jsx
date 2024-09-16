@@ -66,10 +66,16 @@ function Header() {
 						<span className={styles.headerParagraph4}></span>
 						<span className={styles.headerParagraph5}></span>
 					</p>
-					<Link to="/gallery" className={styles.headerButton}>
-						<span className={styles.headerButtonText}>GALLERY</span>
-						<span>&rarr;</span>
-					</Link>
+					<div>
+						<Link to="/bookings" className={styles.headerButton}>
+							<span className={styles.headerButtonText}>Book Me</span>
+							<span>&rarr;</span>
+						</Link>
+						<Link to="/gallery" className={styles.headerButton}>
+							<span className={styles.headerButtonText}>GALLERY</span>
+							<span>&rarr;</span>
+						</Link>
+					</div>
 
 					<div className={styles.headerIconContainer}>
 						<i className={`${styles.headerIcon} fa-brands fa-facebook`}></i>
