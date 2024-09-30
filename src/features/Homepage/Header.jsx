@@ -78,9 +78,38 @@ function Header() {
 					</div>
 
 					<div className={styles.headerIconContainer}>
-						<i className={`${styles.headerIcon} fa-brands fa-facebook`}></i>
-						<i className={`${styles.headerIcon}  fa-brands fa-instagram `}></i>
-						<i className={`${styles.headerIcon} fa-brands fa-x-twitter`}></i>
+						<Link
+							style={{
+								textDecoration: "none",
+								color: "#fff",
+								marginRight: "2rem",
+							}}
+							to={"https://web.facebook.com/ibrahim.dare.16/?_rdc=1&_rdr"}
+						>
+							<i className={`${styles.headerIcon} fa-brands fa-facebook`}></i>
+						</Link>
+						<Link
+							style={{
+								textDecoration: "none",
+								color: "#fff",
+								marginRight: "2rem",
+							}}
+							to={"https://www.instagram.com/im_samanja/"}
+						>
+							<i
+								className={`${styles.headerIcon}  fa-brands fa-instagram `}
+							></i>
+						</Link>
+						<Link
+							style={{
+								textDecoration: "none",
+								color: "#fff",
+								
+							}}
+							to={"https://x.com/Samanja419"}
+						>
+							<i className={`${styles.headerIcon} fa-brands fa-x-twitter`}></i>
+						</Link>
 					</div>
 				</div>
 			</div>

@@ -13,7 +13,7 @@ function Bookings() {
 		enquiries: "",
 	});
 
-    const navigate = useNavigate()
+	const navigate = useNavigate();
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -22,20 +22,19 @@ function Bookings() {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-        
 
 		emailjs
 			.sendForm(
-				"service_bass4eg",
-				"template_pdeqopt",
+				"service_punqz0t",
+				"template_87oicqv",
 				e.target,
-				"pFfsLVBcO8sEsV84y"
+				"5m5-nx2XSQ7Fwc-jD"
 			)
 			.then(
 				(result) => {
 					console.log(result.text);
 					alert("Booking email sent successfully!");
-                    navigate("/")
+					navigate("/");
 				},
 				(error) => {
 					console.log(error.text);
@@ -56,7 +55,7 @@ function Bookings() {
 	return (
 		<div className={styles.container}>
 			<form className={styles.form} onSubmit={sendEmail}>
-			<BackButton />
+				<BackButton />
 
 				<div className={styles.formItem}>
 					<label className={styles.formLabel} htmlFor="name">
@@ -95,6 +94,8 @@ function Bookings() {
 						value={formData.number}
 						onChange={handleChange}
 						required
+						pattern="[0-9]{11}"
+						title="Please enter a valid 11 digits phone number"
 					/>
 				</div>
 				<div className={styles.formItem}>

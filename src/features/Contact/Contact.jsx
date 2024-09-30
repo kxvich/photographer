@@ -5,9 +5,21 @@ import { Link } from "react-router-dom";
 function Contact({ decor }) {
 	return (
 		<div className={styles.Contact}>
-			<i className={` ${decor} fa-brands fa-facebook`}></i>
-			<i className={` ${decor} fa-brands fa-instagram`}></i>
-			<i className={` ${decor} fa-brands fa-x-twitter`}></i>
+			<Link
+				to={"https://web.facebook.com/ibrahim.dare.16/?_rdc=1&_rdr"}
+				style={{ color: "#fff" }}
+			>
+				<i className={` ${decor} fa-brands fa-facebook`}></i>
+			</Link>
+			<Link
+				to={"https://www.instagram.com/im_samanja/"}
+				style={{ color: "#fff" }}
+			>
+				<i className={` ${decor} fa-brands fa-instagram`}></i>
+			</Link>
+			<Link to={"https://x.com/Samanja419"} style={{ color: "#fff" }}>
+				<i className={` ${decor} fa-brands fa-x-twitter`}></i>
+			</Link>
 			<Link to="/about">
 				<button className={styles.ContactAbout}>About</button>
 			</Link>
