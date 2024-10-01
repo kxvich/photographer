@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import Header from "./features/Homepage/Header";
 import Welcome from "./features/Loading/Welcome";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { Gallery } from "./features/GalleryPage/Gallery";
 import WorkPage from "./features/WorkPage/WorkPage";
 import About from "./features/About/About";
@@ -40,7 +40,7 @@ function App() {
 			<AppContext.Provider
 				value={{ isOpen, setIsOpen, setselectedId, selectedId }}
 			>
-				<BrowserRouter>
+				<Router>
 					<ScrollToTop />
 					<Routes>
 						<Route path="/" element={!isLoading && <Header />} />
@@ -52,7 +52,7 @@ function App() {
 						<Route path="/about" element={!isLoading && <About />} />
 						<Route path="/bookings" element={!isLoading && <Bookings />} />
 					</Routes>
-				</BrowserRouter>
+				</Router>
 			</AppContext.Provider>
 
 			{/* <About/> */}

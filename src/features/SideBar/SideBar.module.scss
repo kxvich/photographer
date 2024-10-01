@@ -1,5 +1,5 @@
 .sideBar {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -13,6 +13,7 @@
 	color: #212529;
     animation: moveinleft .5s;
     animation-fill-mode: backwards;
+    overflow: hidden;
 
     &Close{
         position: absolute;

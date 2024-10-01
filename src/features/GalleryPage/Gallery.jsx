@@ -30,7 +30,7 @@ function Gallery() {
 		"Smj x Victony",
 		"Smj x Reminisce",
 		"Smj x Timini",
-		"Smj x Zlatan"
+		"Smj x Zlatan",
 	];
 	const isDesktop = useMediaQuery("(min-width: 960px)");
 

@@ -18,7 +18,7 @@ function Header() {
 		"images/homescreenimages/image8.jpg",
 	];
 	// // eslint-disable-next-line no-unused-vars
-	const [bgImage1, setBgImage1] = useState(images[0]);
+	const [bgImage1] = useState(images[0]);
 	// const [bgImage2, setBgImage2] = useState(images[1]);
 	// const [fadeIn, setFadeIn] = useState(false);
 
@@ -104,7 +104,6 @@ function Header() {
 							style={{
 								textDecoration: "none",
 								color: "#fff",
-								
 							}}
 							to={"https://x.com/Samanja419"}
 						>

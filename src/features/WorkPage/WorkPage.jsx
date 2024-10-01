@@ -5,7 +5,7 @@ import WorkTitle from "./WorkTitle";
 import WorkPagePictures from "./WorkPagePictures";
 import useMediaQuery from "../../Hooks/useMediaQuery";
 import SideBar from "../SideBar/SideBar";
-import { useContext } from "react";
+import { useContext, useState,useEffect } from "react";
 import { AppContext } from "../../App";
 
 const work1Images = [
@@ -144,22 +144,68 @@ const imagesGroup = [
 ];
 
 function WorkPage() {
+	// const { isOpen, selectedId } = useContext(AppContext);
+	// console.log(selectedId)
+	// const isDesktop = useMediaQuery("(min-width: 960px)");
+	// // const isMobile = useMediaQuery("(max-width: 500px)")
+	
+	// return (
+	// 	<div className={styles.workPage}>
+	// 		{isDesktop ? <DesktopNav /> : <MobileNav />}
+	// 		{isDesktop ? (
+	// 			<WorkTitle title={imagesGroup.at(selectedId - 1).at(0).title} />
+	// 		) : (
+	// 			""
+	// 		)}
+	// 		{isOpen && <SideBar />}
+	// 		<WorkPagePictures images={imagesGroup.at(selectedId - 1)} />
+	// 	</div>
+	// );
 	const { isOpen, selectedId } = useContext(AppContext);
-	console.log(selectedId)
-	const isDesktop = useMediaQuery("(min-width: 960px)");
-	// const isMobile = useMediaQuery("(max-width: 500px)")
-	return (
-		<div className={styles.workPage}>
-			{isDesktop ? <DesktopNav /> : <MobileNav />}
-			{isDesktop ? (
-				<WorkTitle title={imagesGroup.at(selectedId - 1).at(0).title} />
-			) : (
-				""
-			)}
-			{isOpen && <SideBar />}
-			<WorkPagePictures images={imagesGroup.at(selectedId - 1)} />
-		</div>
-	);
+    const [loading, setLoading] = useState(true);
+    const [imagesToShow, setImagesToShow] = useState([]);
+    const isDesktop = useMediaQuery("(min-width: 960px)");
+
+    useEffect(() => {
+        const selectedIndex = selectedId ? selectedId - 1 : null;
+
+        if (selectedIndex !== null && selectedIndex >= 0 && selectedIndex < imagesGroup.length) {
+            const images = imagesGroup[selectedIndex];
+            setImagesToShow(images);
+            setLoading(true); // Set loading to true when fetching new images
+            
+            // Preload images
+            Promise.all(
+                images.map(image => {
+                    return new Promise((resolve) => {
+                        const img = new Image();
+                        img.src = image.url;
+                        img.onload = resolve; // Resolve when image is loaded
+                    });
+                })
+            ).then(() => {
+                setLoading(false); // Set loading to false when all images are preloaded
+            });
+        } else {
+            setImagesToShow([]); // Reset images if selectedId is invalid
+            setLoading(false); // Stop loading
+        }
+    }, [selectedId]);
+
+    return (
+        <div className={styles.workPage}>
+            {isDesktop ? <DesktopNav /> : <MobileNav />}
+            {isDesktop && <WorkTitle title={imagesToShow[0]?.title} />}
+            {isOpen && <SideBar />}
+            {loading ? (
+                <div className="spinnerContainer">
+					{isDesktop ? <div className="spinner2"></div> : <div className="spinner"></div>}
+				</div> // Add a spinner or loading message
+            ) : (
+                <WorkPagePictures images={imagesToShow} />
+            )}
+        </div>
+    );
 }
 
 export default WorkPage;
